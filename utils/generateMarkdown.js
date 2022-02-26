@@ -8,24 +8,37 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-const generateMarkdown = dataArr => {
-  
+function renderLicenseLink(license) {
+  let text;
+  switch(license) {
+    default:
+      text = '';
+      break;
+    case 'BSD':
+      text = `[BSD](https://choosealicense.com/licenses/bsd-2-clause/)`;
+      break;
+    case 'MIT':
+      text = `[MIT](https://choosealicense.com/licenses/mit/)`;
+      break;
+    case 'GNU':
+      text = `[GNU](https://choosealicense.com/licenses/gpl-2.0/)`;
+      break;
+  };
+  return text;
 }
 
+// exports data to index.js  to create README
 module.exports = projectData => {
 
-  const { title, description, installation, usage, contributing, tests, github, email, ...header } = projectData;
-  
+  // destructuring data from user input
+  const { title, license, description, installation, 
+    usage, contributing, tests, github, 
+    email} = projectData;
+  // template for README
   return `
-  # ${header.title}
+  # ${title}
   #### License 
+    ${renderLicenseLink(license[0])}
   ## Table of Contents
   [Description](#description)
   [Installation](#installation)
@@ -34,17 +47,17 @@ module.exports = projectData => {
   [Tests](#tests)
   [Questions](#questions)
   ### Description
-      ${header.description}
+      ${description}
   ### Installation
-      ${header.installation}
+      ${installation}
   ### Usage
-      ${header.usage}
+      ${usage}
   ### Contributing
-      ${header.contributing}
+      ${contributing}
   ### Tests
-      ${header.tests}
+      ${tests}
   ## Questions
-      GitHub Profile: ${header.github}
-      Please feel free to contact me at ${header.email} for additional questions.
+      GitHub Profile: ${github}
+      Please feel free to contact me at ${email} for additional questions.
   `;
 };

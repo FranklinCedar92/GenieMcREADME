@@ -44,6 +44,11 @@ const questions = () => {
         },
         {
             type: 'input',
+            name: 'contributing',
+            message: 'Who has contributed to this project?'
+        },
+        {
+            type: 'input',
             name: 'tests',
             message: 'Provide test instructions.'
         },
@@ -51,15 +56,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'license',
             message: 'What license is this project protected under? (required)',
-            choices: ['A', 'B', 'C', 'D'],
-            validate: licInput => {
-                if (licInput) {
-                    return true
-                } else {
-                    console.log('Please choose a license!');
-                    return false
-                }
-            }
+            choices: ['BSD', 'MIT', 'GNU']
         },
         {
             type: 'input',
@@ -96,6 +93,7 @@ const questions = () => {
 // TODO: Create a function to initialize app
 questions() 
     .then(userData => {
+        console.log(userData);
         const pageXML = generatePage(userData);
 
         fs.writeFile('./README.md', pageXML, err => {
