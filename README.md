@@ -1,7 +1,8 @@
 
   # h
   ### License 
-    ##### This application is covered by a [BSD](https://choosealicense.com/licenses/bsd-2-clause/) license.
+    
+    This application is covered by a [BSD](https://choosealicense.com/licenses/bsd-2-clause/) license
   ## Table of Contents
   #### [Description](#description)
   #### [Installation](#installation)

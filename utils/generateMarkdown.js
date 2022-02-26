@@ -10,6 +10,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let text;
+
   switch(license) {
     default:
       text = '';
@@ -27,6 +28,15 @@ function renderLicenseLink(license) {
   return text;
 }
 
+function renderLicenseText(license) {
+  if(license) {
+    return `
+    This application is covered by a ${renderLicenseLink(license)} license`
+  } else {
+    return ''
+  };
+};
+
 // exports data to index.js  to create README
 module.exports = projectData => {
 
@@ -38,7 +48,7 @@ module.exports = projectData => {
   return `
   # ${title}
   ### License 
-    ##### This application is covered by a ${renderLicenseLink(license[0])} license.
+    ${renderLicenseText(license[0])}
   ## Table of Contents
   #### [Description](#description)
   #### [Installation](#installation)
