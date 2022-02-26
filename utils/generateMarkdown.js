@@ -15,13 +15,13 @@ function renderLicenseLink(license) {
       text = '';
       break;
     case 'BSD':
-      text = `[BSD](https://choosealicense.com/licenses/bsd-2-clause/)`;
+      text = '[BSD](https://choosealicense.com/licenses/bsd-2-clause/)';
       break;
     case 'MIT':
-      text = `[MIT](https://choosealicense.com/licenses/mit/)`;
+      text = '[MIT](https://choosealicense.com/licenses/mit/)';
       break;
     case 'GNU':
-      text = `[GNU](https://choosealicense.com/licenses/gpl-2.0/)`;
+      text = '[GNU](https://choosealicense.com/licenses/gpl-2.0/)';
       break;
   };
   return text;
@@ -37,15 +37,15 @@ module.exports = projectData => {
   // template for README
   return `
   # ${title}
-  #### License 
-    ${renderLicenseLink(license[0])}
+  ### Licensing 
+    License used: ${renderLicenseLink(license[0])}
   ## Table of Contents
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  ####[Description](#description)
+  ####[Installation](#installation)
+  ####[Usage](#usage)
+  ####[Contributing](#contributing)
+  ####[Tests](#tests)
+  ####[Questions](#questions)
   ### Description
       ${description}
   ### Installation

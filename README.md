@@ -1,14 +1,14 @@
 
-  # h
-  #### License 
-    [GNU](https://choosealicense.com/licenses/gpl-2.0/)
+  # hjk
+  ### Licensing 
+    License used: [MIT](https://choosealicense.com/licenses/mit/)
   ## Table of Contents
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  ####[Description](#description)
+  ####[Installation](#installation)
+  ####[Usage](#usage)
+  ####[Contributing](#contributing)
+  ####[Tests](#tests)
+  ####[Questions](#questions)
   ### Description
       h
   ### Installation
@@ -16,7 +16,7 @@
   ### Usage
       h
   ### Contributing
-      undefined
+      h
   ### Tests
       h
   ## Questions

@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generatePage = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
@@ -45,7 +45,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'contributing',
-            message: 'Who has contributed to this project?'
+            message: 'What are the contribution guidelines for this project?'
         },
         {
             type: 'input',
@@ -87,10 +87,7 @@ const questions = () => {
     ])
 };
 
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}  // A
-
-// TODO: Create a function to initialize app
+// pulls information from user input to create README content
 questions() 
     .then(userData => {
         console.log(userData);
@@ -103,21 +100,3 @@ questions()
         });
     }); 
     
-// B I think this is my "questions" function at the top
-
-// Function call to initialize app
-// init(); Do I need this?
-
-/*
-promptUser()
-  .then(promptProject)
-  .then(portfolioData => {  // change this to userData
-     const pageHTML = generatePage(portfolioData); // change to pageXML and userData
-
-   A fs.writeFile('./index.html', pageHTML, err => {  // write to './README.md, pageXML, err => ... etc. 
-       if (err) throw new Error(err);
-
-       console.log('Page created! Check out index.html in this directory to see it!');
-    });
-  });
-*/
