@@ -37,8 +37,8 @@ module.exports = projectData => {
   // template for README
   return `
   # ${title}
-  ### Licensing 
-    License used: ${renderLicenseLink(license[0])}
+  ### License 
+    ##### This application is covered by a ${renderLicenseLink(license[0])} license.
   ## Table of Contents
   #### [Description](#description)
   #### [Installation](#installation)
