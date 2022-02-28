@@ -1,5 +1,5 @@
 
-  # h
+  # The Castro
   ### License 
     This application is covered by a [GNU](https://choosealicense.com/licenses/gpl-2.0/) license.
   ## Table of Contents
@@ -10,16 +10,16 @@
   #### [Tests](#tests)
   #### [Questions](#questions)
   ### Description
-      h
+      It's gay
   ### Installation
-      h
+      Install it
   ### Usage
-      h
+      Then you use
   ### Contributing
-      h
+      Just say my name
   ### Tests
-      h
+      Test it
   ## Questions
-      GitHub Profile: h
-      Please feel free to contact me at h for additional questions.
+      GitHub Profile: FranklinCedar92
+      Please feel free to contact me at franklin.c.brown@gmail.com for additional questions.
   
