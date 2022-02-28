@@ -30,8 +30,7 @@ function renderLicenseLink(license) {
 
 function renderLicenseText(license) {
   if(license) {
-    return `
-    This application is covered by a ${renderLicenseLink(license)} license`
+    return 'This application is covered by a ' + renderLicenseLink(license) + ' license.'
   } else {
     return ''
   };

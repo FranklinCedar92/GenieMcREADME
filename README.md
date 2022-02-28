@@ -1,8 +1,7 @@
 
   # h
   ### License 
-    
-    This application is covered by a [BSD](https://choosealicense.com/licenses/bsd-2-clause/) license
+    This application is covered by a [GNU](https://choosealicense.com/licenses/gpl-2.0/) license.
   ## Table of Contents
   #### [Description](#description)
   #### [Installation](#installation)
