@@ -1,7 +1,7 @@
 
-  # The Castro
+  # I'm gay
   ### License 
-    This application is covered by a [GNU](https://choosealicense.com/licenses/gpl-2.0/) license.
+    This application is covered by a [MIT](https://choosealicense.com/licenses/mit/) license.
   ## Table of Contents
   #### [Description](#description)
   #### [Installation](#installation)
@@ -10,13 +10,13 @@
   #### [Tests](#tests)
   #### [Questions](#questions)
   ### Description
-      It's gay
+      It's very gay
   ### Installation
-      Install it
+      You install it
   ### Usage
-      Then you use
+      Then you use it
   ### Contributing
-      Just say my name
+      And if you contribute to it, then just say your name, I guess.
   ### Tests
       Test it
   ## Questions
